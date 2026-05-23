@@ -1,0 +1,73 @@
+tag_name,tag_namespace,maturity_bucket,year_offset,is_standard,is_extension,known_users,notes
+LongTermDebtMaturitiesRepaymentsOfPrincipalInNextTwelveMonths,us-gaap,Y1,1,1,0,"HCA,CHK,M,T,BA",Core Y1 tag; most widely used standard tag for next-12-month maturities
+LongTermDebtMaturitiesRepaymentsOfPrincipalInYearTwo,us-gaap,Y2,2,1,0,"HCA,CHK,M,T,BA",Standard Y2 tag; reported in same footnote as Y1
+LongTermDebtMaturitiesRepaymentsOfPrincipalInYearThree,us-gaap,Y3,3,1,0,"HCA,CHK,M,T,BA",Standard Y3 tag
+LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFour,us-gaap,Y4,4,1,0,"HCA,CHK,M,T,BA",Standard Y4 tag
+LongTermDebtMaturitiesRepaymentsOfPrincipalInYearFive,us-gaap,Y5,5,1,0,"HCA,CHK,M,T,BA",Standard Y5 tag
+LongTermDebtMaturitiesRepaymentsOfPrincipalAfterYearFive,us-gaap,Y5plus,6,1,0,"HCA,CHK,M,T,BA",Catch-all for >5yr maturities; critical for reading bond stacks in low-rate era issuance
+LongTermDebtMaturitiesRepaymentsOfPrincipalRemainderOfFiscalYear,us-gaap,remainder_fy,0,1,0,"DVN,HES,GE",Used in 10-Q filings for current fiscal year remainder; maps to Y1 proxy in annual context
+LongTermDebtMaturitiesRepaymentsOfPrincipalInNextRollingTwelveMonths,us-gaap,Y1,1,1,0,"F,VNO,SLG",Rolling 12-month variant; post-ASU-2016-13 some filers adopted this form
+LongTermDebtMaturitiesRepaymentsOfPrincipalInRollingYearTwo,us-gaap,Y2,2,1,0,"F,VNO",Rolling Y2 variant; parallel to InYearTwo but rolling vs calendar
+LongTermDebtMaturitiesRepaymentsOfPrincipalInRollingYearThree,us-gaap,Y3,3,1,0,"F,VNO",Rolling Y3 variant
+LongTermDebtMaturitiesRepaymentsOfPrincipalInRollingYearFour,us-gaap,Y4,4,1,0,"F,VNO",Rolling Y4 variant
+LongTermDebtMaturitiesRepaymentsOfPrincipalInRollingYearFive,us-gaap,Y5,5,1,0,"F,VNO",Rolling Y5 variant
+LongTermDebtMaturitiesRepaymentsOfPrincipalAfterRollingYearFive,us-gaap,Y5plus,6,1,0,"F,VNO",Rolling Y5+ variant
+DebtInstrumentMaturityDate,us-gaap,UNKNOWN,0,1,0,"ENDP,MNK",Date field not amount; used to identify maturity date of a specific instrument rather than maturity schedule
+DebtInstrumentFaceAmount,us-gaap,UNKNOWN,0,1,0,"ENDP,MNK",Face value of specific instrument; requires pairing with DebtInstrumentMaturityDate
+LongTermDebt,us-gaap,TOTAL,0,1,0,ALL,Balance-sheet total long-term debt; used as denominator in coverage validation
+LongTermDebtNoncurrent,us-gaap,TOTAL,0,1,0,ALL,Noncurrent portion only; sometimes used instead of LongTermDebt
+LongTermDebtCurrent,us-gaap,current,0,1,0,ALL,Current portion of long-term debt; maps to near-term maturity proxy
+ShortTermBorrowings,us-gaap,current,0,1,0,"GE,T",Revolving credit and CP; may overlap with LongTermDebtCurrent — requires dedup
+UnsecuredLongTermDebt,us-gaap,TOTAL,0,1,0,"HCA,THC",Subset of LongTermDebt for unsecured bonds; do not double-count with LongTermDebt
+SecuredLongTermDebt,us-gaap,TOTAL,0,1,0,"HCA,THC",Subset of LongTermDebt for secured loans
+SeniorLongTermNotes,us-gaap,TOTAL,0,1,0,"DIS,CTL",Senior notes line item; may duplicate LongTermDebt depending on footnote structure
+DebtLongTermAndShortTermCombinedAmount,us-gaap,TOTAL,0,1,0,"CWH,GT",Combined total; use only when LongTermDebt not available
+FinanceLeaseLiabilityPaymentsDueNextTwelveMonths,us-gaap,EXCLUDE,0,1,0,MANY,Finance lease — looks like debt maturity tag but represents lease obligations NOT bond debt; EXCLUDE
+FinanceLeaseLiabilityPaymentsDueYearTwo,us-gaap,EXCLUDE,0,1,0,MANY,Finance lease Y2 — EXCLUDE
+FinanceLeaseLiabilityPaymentsDueYearThree,us-gaap,EXCLUDE,0,1,0,MANY,Finance lease Y3 — EXCLUDE
+FinanceLeaseLiabilityPaymentsDueYearFour,us-gaap,EXCLUDE,0,1,0,MANY,Finance lease Y4 — EXCLUDE
+FinanceLeaseLiabilityPaymentsDueYearFive,us-gaap,EXCLUDE,0,1,0,MANY,Finance lease Y5 — EXCLUDE
+FinanceLeaseLiabilityPaymentsDueAfterYearFive,us-gaap,EXCLUDE,0,1,0,MANY,Finance lease Y5+ — EXCLUDE
+OperatingLeaseLiabilityPaymentsDueNextTwelveMonths,us-gaap,EXCLUDE,0,1,0,MANY,Operating lease — EXCLUDE; frequently confused with debt maturity in automated parsing
+OperatingLeaseLiabilityPaymentsDueYearTwo,us-gaap,EXCLUDE,0,1,0,MANY,Operating lease Y2 — EXCLUDE
+OperatingLeaseLiabilityPaymentsDueYearThree,us-gaap,EXCLUDE,0,1,0,MANY,Operating lease Y3 — EXCLUDE
+PurchaseObligationDueInNextTwelveMonths,us-gaap,EXCLUDE,0,1,0,MANY,Supply/purchase commitments — NOT debt maturities; EXCLUDE
+ContractualObligationDueInNextTwelveMonths,us-gaap,EXCLUDE,0,1,0,MANY,Aggregated contractual obligation — contains lease and other non-debt items; EXCLUDE
+hca_LongTermDebtMaturingInYearOne,hca,Y1,1,0,1,"HCA",HCA extension tag pre-2018; equivalent to standard Y1; discovered in 2017 10-K XBRL
+hca_LongTermDebtMaturingInYearTwo,hca,Y2,2,0,1,"HCA",HCA extension Y2
+hca_LongTermDebtMaturingInYearThree,hca,Y3,3,0,1,"HCA",HCA extension Y3
+hca_LongTermDebtMaturingInYearFour,hca,Y4,4,0,1,"HCA",HCA extension Y4
+hca_LongTermDebtMaturingInYearFive,hca,Y5,5,0,1,"HCA",HCA extension Y5
+hca_LongTermDebtMaturingThereafter,hca,Y5plus,6,0,1,"HCA",HCA extension Y5+; used until 2018 then migrated to standard tags
+chk_AggregateAnnualMaturitiesOfLongTermDebtYearOne,chk,Y1,1,0,1,"CHK",Chesapeake Energy extension; gas producer with bespoke XBRL taxonomy 2014-2018
+chk_AggregateAnnualMaturitiesOfLongTermDebtYearTwo,chk,Y2,2,0,1,"CHK",Chesapeake Y2 extension
+chk_AggregateAnnualMaturitiesOfLongTermDebtYearThree,chk,Y3,3,0,1,"CHK",Chesapeake Y3 extension
+chk_AggregateAnnualMaturitiesOfLongTermDebtYearFour,chk,Y4,4,0,1,"CHK",Chesapeake Y4 extension
+chk_AggregateAnnualMaturitiesOfLongTermDebtYearFive,chk,Y5,5,0,1,"CHK",Chesapeake Y5 extension
+chk_AggregateAnnualMaturitiesOfLongTermDebtAfterYearFive,chk,Y5plus,6,0,1,"CHK",Chesapeake Y5+ extension
+dis_LongTermDebtMaturitiesYearOne,dis,Y1,1,0,1,"DIS",Disney extension pre-Fox acquisition integration; standardised post-2020
+dis_LongTermDebtMaturitiesYearTwo,dis,Y2,2,0,1,"DIS",Disney Y2 extension
+dis_LongTermDebtMaturitiesThereafter,dis,Y5plus,6,0,1,"DIS",Disney Y5+ extension
+ctl_LongTermDebtDueInOneYear,ctl,Y1,1,0,1,"CTL",CenturyLink/Lumen extension; telco sector uses non-standard naming conventions
+ctl_LongTermDebtDueInTwoYears,ctl,Y2,2,0,1,"CTL",CenturyLink Y2
+ctl_LongTermDebtDueInThreeYears,ctl,Y3,3,0,1,"CTL",CenturyLink Y3
+ctl_LongTermDebtDueAfterFiveYears,ctl,Y5plus,6,0,1,"CTL",CenturyLink Y5+
+f_LongTermDebtMaturitiesNextTwelveMonths,f,Y1,1,0,1,"F",Ford Motor extension; automotive finance entities add complexity
+ge_DebtMaturitiesRepaymentOfPrincipalInYearOne,ge,Y1,1,0,1,"GE",GE Capital legacy extension; discontinued post-GE Capital wind-down (2019+)
+ge_DebtMaturitiesRepaymentOfPrincipalInYearTwo,ge,Y2,2,0,1,"GE",GE Y2 extension
+ge_DebtMaturitiesRepaymentOfPrincipalInYearThree,ge,Y3,3,0,1,"GE",GE Y3 extension
+ge_DebtMaturitiesRepaymentOfPrincipalInYearFour,ge,Y4,4,0,1,"GE",GE Y4 extension
+ge_DebtMaturitiesRepaymentOfPrincipalInYearFive,ge,Y5,5,0,1,"GE",GE Y5 extension
+ge_DebtMaturitiesRepaymentOfPrincipalAfterYearFive,ge,Y5plus,6,0,1,"GE",GE Y5+ extension
+LongTermDebtMaturitiesRepaymentsOfPrincipalInQuarterOne,us-gaap,Q1,1,1,0,"DVN,OAS",Quarterly variant; used in 10-Q filings when issuer breaks out sub-annual schedule
+LongTermDebtMaturitiesRepaymentsOfPrincipalInQuarterTwo,us-gaap,Q2,2,1,0,"DVN,OAS",Quarterly Q2
+LongTermDebtMaturitiesRepaymentsOfPrincipalInQuarterThree,us-gaap,Q3,3,1,0,"DVN",Quarterly Q3
+LongTermDebtMaturitiesRepaymentsOfPrincipalInQuarterFour,us-gaap,Q4,4,1,0,"DVN",Quarterly Q4
+mpw_MortgageAndOtherLoansPayableMaturitiesYearOne,mpw,Y1,1,0,1,"MPW",Medical Properties Trust REIT extension; mortgage-level maturity vs corporate bond
+mpw_MortgageAndOtherLoansPayableMaturitiesYearTwo,mpw,Y2,2,0,1,"MPW",MPW Y2 REIT extension
+sbc_LongTermDebtRepaymentYearOneThrough5,sbc,PARTIAL,0,0,1,"CBL",CBL Associates aggregated Y1-Y5; requires manual allocation — flag as PARTIAL
+DebtInstrumentCarryingAmount,us-gaap,TOTAL,0,1,0,MANY,Carrying value net of unamortised discount/premium; slightly < face for discount bonds
+NotesPayable,us-gaap,TOTAL,0,1,0,"WBA,GT",Notes payable line; may or may not include current portion depending on filer
+SeniorNotes,us-gaap,TOTAL,0,1,0,"DISH,CTL",Senior notes total; subset of LongTermDebt for senior-priority bonds
+JuniorSubordinatedDebentures,us-gaap,TOTAL,0,1,0,"GE",Hybrid capital instruments; lower in capital structure; usually small
+TermLoanFacilityMaturities,us-gaap,TOTAL,0,1,0,"THC,DaVita",Term loan aggregate; leveraged loan issuers often report separately from bonds
