@@ -1,0 +1,51 @@
+ticker,company_name,cik,sector,gics_industry,debt_category,avg_total_debt_bn,credit_rating_approx,include_flag,known_stress_event,notes
+M,Macy's Inc,794367,Consumer Discretionary,Multiline Retail,high_yield,3.1,BB-,1,0,Department store secular decline; HY issuer with meaningful maturity concentration
+JCP,JCPenney,1166928,Consumer Discretionary,Multiline Retail,high_yield,4.2,CCC,1,1,Filed Chapter 11 May 2020; visible maturity wall 2022-2023 in 2018 10-K filings
+S,Sears Holdings,1043277,Consumer Discretionary,Multiline Retail,high_yield,3.8,CCC,1,1,Filed Chapter 11 Oct 2018; maturity wall visible 12+ months ahead
+LB,L Brands (Bath & Body Works),60667,Consumer Discretionary,Specialty Retail,high_yield,5.5,BB,1,0,Victoria's Secret spin-off created new debt structure; monitoring
+PIR,Pier 1 Imports,78814,Consumer Discretionary,Specialty Retail,high_yield,0.5,CCC,1,0,Filed Chapter 11 Feb 2020; small but cleanly structured maturity event
+GPS,Gap Inc,39911,Consumer Discretionary,Specialty Retail,high_yield,2.8,BB-,1,0,Pandemic-era bond issuance created near-term concentrations
+RL,Tapestry Inc,1116132,Consumer Discretionary,Textiles Apparel & Luxury,high_yield,1.6,BBB-,1,0,LBO-adjacent leverage from Coach acquisition; IG-stressed
+KSS,Kohl's Corp,885639,Consumer Discretionary,Multiline Retail,high_yield,2.1,BB+,1,0,Leverage increased sharply post-2022 with share buybacks funded by debt
+BBY,Bed Bath & Beyond,886158,Consumer Discretionary,Specialty Retail,high_yield,1.1,CCC,1,1,Filed Chapter 11 Apr 2023; maturity wall and liquidity crisis visible 2021
+DG,Dollar General,34408,Consumer Discretionary,Multiline Retail,investment_grade_stressed,6.4,BBB,1,0,IG but elevated leverage ratio post-expansion; rate-sensitive refinancing
+GT,Goodyear Tire & Rubber,42582,Consumer Discretionary,Auto Components,high_yield,7.2,BB-,1,0,Cyclical HY issuer with multi-tranche bond stack
+NWL,Newell Brands,814453,Consumer Discretionary,Household Durables,high_yield,5.3,BB,1,0,Jarden acquisition debt burden; multiple maturity events
+CHK,Chesapeake Energy,895126,Energy,Oil Gas & Consumable Fuels,high_yield,9.5,CCC,1,1,Filed Chapter 11 Jun 2020; classic energy maturity wall pre-bankruptcy
+DVN,Devon Energy,1090012,Energy,Oil Gas & Consumable Fuels,investment_grade_stressed,5.1,BBB-,1,0,WPX acquisition-driven leverage spike; monitored in 2020 rate environment
+OAS,Oasis Petroleum,1486159,Energy,Oil Gas & Consumable Fuels,high_yield,2.8,B,1,1,Filed Chapter 11 Sep 2020; Permian operator with 2022-2023 maturities
+HES,Hess Corp,4447,Energy,Oil Gas & Consumable Fuels,investment_grade_stressed,7.8,BBB-,1,0,Pre-Chevron acquisition; elevated leverage vs IG peers
+XEC,Cimarex Energy,1168165,Energy,Oil Gas & Consumable Fuels,high_yield,1.9,BB+,1,0,Independent E&P with bond maturities concentrated in 2024-2026
+CRC,California Resources Corp,1609065,Energy,Oil Gas & Consumable Fuels,high_yield,5.1,B-,1,0,Occidental spin-off; distressed exchange completed 2020
+APA,APA Corp,6769,Energy,Oil Gas & Consumable Fuels,high_yield,4.2,BB+,1,0,Apache parent; international ops create FX-adjusted debt complexity
+MXC,Mexco Energy,66570,Energy,Oil Gas & Consumable Fuels,high_yield,0.2,B,0,0,Too small for main universe; held as placeholder for sector completeness
+HCA,HCA Healthcare,860731,Health Care,Health Care Providers & Services,high_yield,37.2,BB+,1,0,Largest HY healthcare issuer; LBO legacy from 2006 Bain Capital deal
+THC,Tenet Healthcare,70858,Health Care,Health Care Providers & Services,high_yield,16.1,B+,1,0,Hospital chain with complex multi-tranche bond and loan structure
+DaVita,DaVita Inc,927066,Health Care,Health Care Providers & Services,leveraged_loan,8.9,BB,1,0,KKR-affiliated board member; leveraged capital structure post-acquisition
+ENDP,Endo International,1593034,Health Care,Pharmaceuticals,high_yield,8.6,CCC,1,1,Filed Chapter 11 Aug 2022; opioid litigation + maturity wall created dual stress
+PBH,Prestige Consumer Healthcare,1295947,Health Care,Pharmaceuticals,high_yield,1.7,B+,1,0,Acquisition-heavy pharma with HY bond funding
+MNK,Mallinckrodt PLC,1522982,Health Care,Pharmaceuticals,high_yield,5.8,CCC,1,1,Filed Chapter 11 Oct 2020; opioid liabilities + 2024 maturities flagged 2019
+BDX,Becton Dickinson,10795,Health Care,Health Care Equipment,investment_grade_stressed,18.2,BBB-,1,0,C.R. Bard acquisition debt; IG-stressed with watch-worthy maturity profile
+DIS,Walt Disney Co,1001039,Communication Services,Entertainment,investment_grade_stressed,47.1,BBB+,1,0,21st Century Fox acquisition; COVID-era refinancing window monitored
+CTL,CenturyLink (Lumen),18926,Communication Services,Diversified Telecommunication,high_yield,31.5,BB-,1,0,Level 3 acquisition created massive multi-tranche maturity stack
+T,AT&T Inc,732717,Communication Services,Diversified Telecommunication,investment_grade_stressed,168.2,BBB-,1,0,Time Warner acquisition; IG-stressed with enormous maturity calendar
+DISH,Dish Network,1001082,Communication Services,Diversified Telecommunication,high_yield,14.8,B-,1,0,5G spectrum debt + legacy bond maturities create binary 2025-2026 risk
+NWSA,News Corp,1564708,Communication Services,Media,investment_grade_stressed,3.1,BBB-,1,0,Murdoch legacy debt from HarperCollins acquisition spree
+SiriusXM,Sirius XM Holdings,908255,Communication Services,Entertainment,high_yield,9.7,BB,1,0,Liberty Media influence; complex debt with known 2024 maturity cluster
+AMC,AMC Networks,784977,Communication Services,Entertainment,high_yield,2.8,B,1,0,Linear TV secular decline + 2024-2026 bond maturities; actively monitored
+GE,General Electric,40554,Industrials,Industrial Conglomerates,investment_grade_stressed,54.1,BBB+,1,0,GE Capital wind-down created complex multi-tranche maturity waterfall
+BA,Boeing Co,12927,Industrials,Aerospace & Defense,investment_grade_stressed,57.7,BBB-,1,0,737 MAX crisis + COVID combined to spike leverage; near-IG-stress territory
+X,United States Steel,101830,Industrials,Metals & Mining,high_yield,3.5,BB,1,0,Cyclical issuer; Nippon Steel acquisition pending adds complexity
+FCX,Freeport-McMoRan,831259,Industrials,Metals & Mining,high_yield,9.2,BB+,1,0,Copper-driven cyclicality; completed significant deleveraging 2015-2020
+F,Ford Motor Co,37996,Consumer Discretionary,Automobiles,high_yield,148.5,BB+,1,0,Ford Motor Credit complex debt; technically HY from S&P perspective
+SPR,Spirit AeroSystems,1364885,Industrials,Aerospace & Defense,high_yield,3.7,BB-,1,0,Boeing dependency; standalone HY issuer with 2026-2028 maturity concentration
+WBA,Walgreens Boots Alliance,1618921,Consumer Staples,Food & Staples Retailing,investment_grade_stressed,8.6,BB+,1,0,Downgraded to HY 2023; maturity wall increasingly visible post-downgrade
+CWH,Camping World Holdings,1590976,Consumer Discretionary,Specialty Retail,high_yield,1.8,B+,1,0,Leveraged retailer; vehicle finance facility maturities create episodic risk
+VNO,Vornado Realty Trust,899689,Real Estate,Office REITs,investment_grade_stressed,12.2,BBB-,1,0,NYC office REIT; rising rate environment creates acute refinancing difficulty
+SLG,SL Green Realty,1040971,Real Estate,Office REITs,investment_grade_stressed,9.4,BB+,1,0,NYC office concentration; distressed exchange risk in 2024-2025 window
+MPW,Medical Properties Trust,927653,Real Estate,Health Care REITs,high_yield,9.8,BB,1,0,Steward Health bankruptcy created tenant stress cascade to REIT debt
+CBL,CBL & Associates,907254,Real Estate,Retail REITs,high_yield,3.2,CCC,1,1,Filed Chapter 11 Nov 2020; mall REIT with COVID-era maturity crisis
+SKT,Tanger Factory Outlet,1116132,Real Estate,Retail REITs,investment_grade_stressed,1.8,BBB-,1,0,Outlet REIT monitoring for IG-to-HY migration trigger
+WPG,Washington Prime Group,1594686,Real Estate,Retail REITs,high_yield,4.1,CCC,1,1,Filed Chapter 11 Jun 2021; Class B mall maturity wall crystallised 2020-2021
+CLNC,Colony Credit Real Estate,1687820,Real Estate,Diversified REITs,high_yield,2.3,B,1,0,Transitional lending REIT with complex CRE debt exposure
+JC,Jack Cooper Holdings,0,Industrials,Road & Rail,leveraged_loan,0.9,B-,0,0,Private issuer; shown for reference on transport sector debt structures
