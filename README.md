@@ -211,13 +211,14 @@ jupyter notebook notebooks/01_exploratory_analysis.ipynb
 
 ## Key Findings
 
-*(Populated after running the full pipeline — see notebook Section 10)*
+No results are reported yet. The pipeline needs live SEC XBRL filings and credit data that were not run for this repository, so there are no measured lead times, ICs or Sharpe ratios to quote. Run the full pipeline and notebook Section 10 to produce them. The planned outputs are:
 
-- **Signal lead time**: Median X months before documented stress events
-- **Spearman IC at 180d**: X (decay-adjusted) vs X (raw)
-- **Long-short Sharpe**: X (decay-adjusted) vs X (raw signal)
-- **Carry-bleed quantification**: Average X% loss in the pre-event period
-- **Macro regime**: Signal is strongest in RISING_RATES + WIDE_SPREADS regime
+- Median signal lead time before documented stress events
+- Spearman IC at 180 days, decay-adjusted versus raw signal
+- Long-short Sharpe, decay-adjusted versus raw signal
+- Average pre-event carry bleed
+
+Any regime dependence (for example rising rates with wide spreads) is a hypothesis to test, not a finding.
 
 ---
 
