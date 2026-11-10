@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+type: software
+title: >-
+  Corporate Bond Maturity Wall Stress via CUSIP-Level Refinancing Calendar
+authors:
+  - given-names: Rajvardhan
+    family-names: Jadhav
+repository-code: https://github.com/rxj0102/maturity-wall-alpha
+license: MIT
+date-released: 2026-11-10
