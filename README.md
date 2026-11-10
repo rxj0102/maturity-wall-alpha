@@ -220,6 +220,21 @@ No results are reported yet. The pipeline needs live SEC XBRL filings and credit
 
 Any regime dependence (for example rising rates with wide spreads) is a hypothesis to test, not a finding.
 
+### Reference data review (November 2026)
+
+`data/reference/company_universe.csv` was checked against SEC EDGAR with `scripts/verify_universe.py` (output: `results/universe_check.csv`). Before the fix, 22 of the 50 CIKs pointed to a different filer, for example HCA Healthcare to Tyler Technologies, Tenet Healthcare to Bank of America, Dollar General to Family Dollar, General Electric to GE Capital, and Jack Cooper had CIK 0. Five tickers were also wrong: Sears was S (now SHLD), Bed Bath & Beyond was BBY (Best Buy's ticker, now BBBY), Tapestry was RL (now TPR), and DaVita, SiriusXM and AMC were not tickers (now DVA, SIRI, AMCX). After the fix all 50 CIKs match the listed company by current or former EDGAR name; the 4 rows the script still flags are naming differences (JCPenney, Kohl's, AT&T, and APA Corp, whose CIK is Apache Corp, the filer before the 2021 holding company). `avg_total_debt_bn` and `credit_rating_approx` are not sourced in this repo and have not been verified.
+
+### Signal documentation
+
+| Field | Value |
+|---|---|
+| Signal | `stress_score` = MCS x RDM x w(m) (see The Three Signal Components) |
+| Expected sign | Negative: high stress predicts underperformance and credit stress |
+| Inputs | Debt maturity schedules from SEC XBRL, Treasury yields and HY or IG OAS (FRED), prices (yfinance) |
+| Timing | Rebalanced quarterly, `BACKTEST_START` 2014-01-01 to `BACKTEST_END` 2023-12-31 |
+| Code | `src/xbrl_parser.py`, `src/features.py`, `src/signal.py`, `src/backtest.py` |
+| Status | Not run. The universe now resolves to the right filers, which is a prerequisite for the XBRL step |
+
 ---
 
 ## Limitations
